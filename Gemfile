@@ -28,6 +28,7 @@ gem 'haml', '~> 4.0.7'
 gem 'simple_form', '~> 3.2.1'
 gem 'devise', '~> 3.5.6'
 gem 'closure_tree', '~> 6.0.0'
+gem 'tzinfo-data'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
