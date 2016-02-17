@@ -11,6 +11,8 @@
       %li= link_to "about", root_url
       %li= link_to "faq", root_url
   %body
+    %p.notice= notice
+    %p.alert= alert
     = yield
     %nav
       %ul
