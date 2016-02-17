@@ -1,0 +1,21 @@
+!!!!
+%html
+  %head
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+    %title Nested
+  %header
+    %ul
+      %li= link_to image_tag('logo.svg'), root_url
+      %li= link_to "about", root_url
+      %li= link_to "faq", root_url
+  %body
+    = yield
+    %nav
+      %ul
+        %li GENERATE NAV HERE
+        %li nave items -todo
+        %li useful Nav Items
+  %footer
+    a spentronics site

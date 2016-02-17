@@ -1,0 +1,3 @@
+devise users
+faye updates
+navigation / # div making for navigation
