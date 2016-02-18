@@ -5,17 +5,17 @@ class CommentsController < ApplicationController
 
   def new
     @comment = Comment.new(parent_id: params[:parent_id])
-    @comment = current_user.comments.build(parent_id: params[:parent_id])
+    @comment.user_id = current_user.id if current_user || nil
   end
 
   def create
     if params[:comment][:parent_id].to_i > 0
       parent = Comment.find_by_id(params[:comment].delete(:parent_id))
       @comment = parent.children.build(comment_params)
-      @comment = current_user.comments.build(comment_params)
+      @comment.user_id = current_user.id if current_user || nil
     else
       @comment = Comment.new(comment_params)
-      @comment = current_user.comments.build(comment_params)
+      @comment.user_id = current_user.id if current_user || nil
     end
 
     if @comment.save

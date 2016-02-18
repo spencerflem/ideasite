@@ -13,12 +13,40 @@
  *= require_tree .
  *= require_self
  */
+body {
+  background-color: #F7F7F7;
+}
+
 header {
-  background-color: gray;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.3em;
+  padding: 0.3em 0;
+  border-bottom: 0.3rem solid black;
+}
+
+header .logo {
+  margin-left: 2em;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+header .logo, header ul, header li {
+  display: inline;
+}
+
+header ul {
+  float: right;
+}
+
+header li {
+  margin-right: 1em;
 }
 
 nav {
-    float: right;
+    //float: right;
 }
 
 footer {
