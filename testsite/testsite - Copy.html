@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" media="all" href="html5reset.css"/>
+    <link rel="stylesheet" media="all" href="testcss.css"/>
+    <link href='https://fonts.googleapis.com/css?family=EB+Garamond|Permanent+Marker' rel='stylesheet' type='text/css'>
+    <script src="testjs.js"></script>
+    <script src="stickyfill.js"></script>
+    <title>ideasite</title>
+  </head>
+  <body>
+	<header>
+	  <ul class='left'>
+      <li id='logo'><a href="http://localhost:3000/">ideasite</a></li>
+    </ul>
+	  <ul class ='right'>
+  		<li><a href="about.html.haml">about</a></li>
+  		<li><a href="http://localhost:3000/">faq</a></li>
+  		<li><a href="/users/sign_in">sign in</a></li>
+  		<li><a href="/users/sign_up">sign up</a></li>
+	  </ul>
+	</header>
+	<div id='main'>
+		<div id='content'>
+		  <p class='notice'></p>
+		  <p class='alert'></p>
+		  <ul id='list'>
+			<ul class='top'>
+				<li class='minimize'>[-]</li>
+				<li class='save'>save?</li>
+				<li class='content'>entertainment</li>
+				<ul class='category'>
+					<li class='insert'>new idea &#8594;</li>
+					<li class='minimize'>[-]</li>
+					<li class='save'>save?</li>
+					<li class='content'>videogames</li>
+					<li class='edit'>edit</li>
+					<li class='delete'>delete?</li>
+					<ul class='idea'>
+						<li class='minimize'>[-]</li>
+						<li class='save'>save?</li>
+						<li class='content'>slimeball tactics</li>
+						<li class='edit'>edit</li>
+						<li class='delete'>delete?</li>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+            <ul class='new'>
+              <li class='maximize'>[+]</li>
+              <li class='betweenline'>new comment</li>
+            </ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+            <ul class='hidden'>
+              <li class='maximize'>[+]</li>
+              <li class='betweenline'>hidden comment</li>
+            </ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+					</ul>
+				</ul>
+				<ul class='category'>
+					<li class='minimize'>[-]</li>
+					<li class='save'>save?</li>
+					<li class='content'>movies</li>
+					<li class='edit'>edit</li>
+					<li class='delete'>delete?</li>
+					<ul class='idea'>
+						<li class='minimize'>[-]</li>
+						<li class='save'>save?</li>
+						<li class='content'>slimeball tactics</li>
+						<li class='edit'>edit</li>
+						<li class='delete'>delete?</li>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+					</ul>
+				</ul>
+				<ul class='category'>
+					<li class='minimize'>[-]</li>
+					<li class='save'>save?</li>
+					<li class='content'>tvshows</li>
+					<li class='edit'>edit</li>
+					<li class='delete'>delete?</li>
+					<ul class='idea'>
+						<li class='minimize'>[-]</li>
+						<li class='save'>save?</li>
+						<li class='content'>slimeball tactics</li>
+						<li class='edit'>edit</li>
+						<li class='delete'>delete?</li>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+					</ul>
+				</ul>
+				<ul class='category'>
+					<li class='minimize'>[-]</li>
+					<li class='save'>save?</li>
+					<li class='content'>music</li>
+					<li class='edit'>edit</li>
+					<li class='delete'>delete?</li>
+					<ul class='idea'>
+						<li class='minimize'>[-]</li>
+						<li class='save'>save?</li>
+						<li class='content'>slimeball tactics</li>
+						<li class='edit'>edit</li>
+						<li class='delete'>delete?</li>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+					</ul>
+				</ul>
+				<ul class='category'>
+					<li class='minimize'>[-]</li>
+					<li class='save'>save?</li>
+					<li class='content'>writing</li>
+					<li class='edit'>edit</li>
+					<li class='delete'>delete?</li>
+					<ul class='idea'>
+						<li class='minimize'>[-]</li>
+						<li class='save'>save?</li>
+						<li class='content'>slimeball tactics</li>
+						<li class='edit'>edit</li>
+						<li class='delete'>delete?</li>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+					</ul>
+				</ul>
+				<ul class='category'>
+					<li class='minimize'>[-]</li>
+					<li class='save'>save?</li>
+					<li class='content'>art</li>
+					<li class='edit'>edit</li>
+					<li class='delete'>delete?</li>
+					<ul class='idea'>
+						<li class='minimize'>[-]</li>
+						<li class='save'>save?</li>
+						<li class='content'>slimeball tactics</li>
+						<li class='edit'>edit</li>
+						<li class='delete'>delete?</li>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+					</ul>
+				</ul>
+			</ul>
+
+			<ul class='top'>
+				<li class='minimize'>[-]</li>
+				<li class='save'>save?</li>
+				<li class='content'>buisiness</li>
+				<ul class='category'>
+					<li class='minimize'>[-]</li>
+					<li class='save'>save?</li>
+					<li class='content'>videogames</li>
+					<li class='edit'>edit</li>
+					<li class='delete'>delete?</li>
+					<ul class='idea'>
+						<li class='minimize'>[-]</li>
+						<li class='save'>save?</li>
+						<li class='content'>slimeball tactics</li>
+						<li class='edit'>edit</li>
+						<li class='delete'>delete?</li>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+					</ul>
+				</ul>
+				<ul class='category'>
+					<li class='minimize'>[-]</li>
+					<li class='save'>save?</li>
+					<li class='content'>movies</li>
+					<li class='edit'>edit</li>
+					<li class='delete'>delete?</li>
+					<ul class='idea'>
+						<li class='minimize'>[-]</li>
+						<li class='save'>save?</li>
+						<li class='content'>slimeball tactics</li>
+						<li class='edit'>edit</li>
+						<li class='delete'>delete?</li>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+					</ul>
+				</ul>
+				<ul class='category'>
+					<li class='minimize'>[-]</li>
+					<li class='save'>save?</li>
+					<li class='content'>tvshows</li>
+					<li class='edit'>edit</li>
+					<li class='delete'>delete?</li>
+					<ul class='idea'>
+						<li class='minimize'>[-]</li>
+						<li class='save'>save?</li>
+						<li class='content'>slimeball tactics</li>
+						<li class='edit'>edit</li>
+						<li class='delete'>delete?</li>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+					</ul>
+				</ul>
+				<ul class='category'>
+					<li class='minimize'>[-]</li>
+					<li class='save'>save?</li>
+					<li class='content'>music</li>
+					<li class='edit'>edit</li>
+					<li class='delete'>delete?</li>
+					<ul class='idea'>
+						<li class='minimize'>[-]</li>
+						<li class='save'>save?</li>
+						<li class='content'>slimeball tactics</li>
+						<li class='edit'>edit</li>
+						<li class='delete'>delete?</li>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+					</ul>
+				</ul>
+				<ul class='category'>
+					<li class='minimize'>[-]</li>
+					<li class='save'>save?</li>
+					<li class='content'>writing</li>
+					<li class='edit'>edit</li>
+					<li class='delete'>delete?</li>
+					<ul class='idea'>
+						<li class='minimize'>[-]</li>
+						<li class='save'>save?</li>
+						<li class='content'>slimeball tactics</li>
+						<li class='edit'>edit</li>
+						<li class='delete'>delete?</li>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+					</ul>
+				</ul>
+				<ul class='category'>
+					<li class='minimize'>[-]</li>
+					<li class='save'>save?</li>
+					<li class='content'>art</li>
+					<li class='edit'>edit</li>
+					<li class='delete'>delete?</li>
+					<ul class='idea'>
+						<li class='minimize'>[-]</li>
+						<li class='save'>save?</li>
+						<li class='content'>slimeball tactics</li>
+						<li class='edit'>edit</li>
+						<li class='delete'>delete?</li>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+					</ul>
+				</ul>
+			</ul>
+			<ul class='top'>
+				<li class='minimize'>[-]</li>
+				<li class='save'>save?</li>
+				<li class='content'>productivity</li>
+				<ul class='category'>
+					<li class='minimize'>[-]</li>
+					<li class='save'>save?</li>
+					<li class='content'>videogames</li>
+					<li class='edit'>edit</li>
+					<li class='delete'>delete?</li>
+					<ul class='idea'>
+						<li class='minimize'>[-]</li>
+						<li class='save'>save?</li>
+						<li class='content'>slimeball tactics</li>
+						<li class='edit'>edit</li>
+						<li class='delete'>delete?</li>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+					</ul>
+				</ul>
+				<ul class='category'>
+					<li class='minimize'>[-]</li>
+					<li class='save'>save?</li>
+					<li class='content'>movies</li>
+					<li class='edit'>edit</li>
+					<li class='delete'>delete?</li>
+					<ul class='idea'>
+						<li class='minimize'>[-]</li>
+						<li class='save'>save?</li>
+						<li class='content'>slimeball tactics</li>
+						<li class='edit'>edit</li>
+						<li class='delete'>delete?</li>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+					</ul>
+				</ul>
+				<ul class='category'>
+					<li class='minimize'>[-]</li>
+					<li class='save'>save?</li>
+					<li class='content'>tvshows</li>
+					<li class='edit'>edit</li>
+					<li class='delete'>delete?</li>
+					<ul class='idea'>
+						<li class='minimize'>[-]</li>
+						<li class='save'>save?</li>
+						<li class='content'>slimeball tactics</li>
+						<li class='edit'>edit</li>
+						<li class='delete'>delete?</li>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+					</ul>
+				</ul>
+				<ul class='category'>
+					<li class='minimize'>[-]</li>
+					<li class='save'>save?</li>
+					<li class='content'>music</li>
+					<li class='edit'>edit</li>
+					<li class='delete'>delete?</li>
+					<ul class='idea'>
+						<li class='minimize'>[-]</li>
+						<li class='save'>save?</li>
+						<li class='content'>slimeball tactics</li>
+						<li class='edit'>edit</li>
+						<li class='delete'>delete?</li>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+					</ul>
+				</ul>
+				<ul class='category'>
+					<li class='minimize'>[-]</li>
+					<li class='save'>save?</li>
+					<li class='content'>writing</li>
+					<li class='edit'>edit</li>
+					<li class='delete'>delete?</li>
+					<ul class='idea'>
+						<li class='minimize'>[-]</li>
+						<li class='save'>save?</li>
+						<li class='content'>slimeball tactics</li>
+						<li class='edit'>edit</li>
+						<li class='delete'>delete?</li>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+					</ul>
+				</ul>
+				<ul class='category'>
+					<li class='minimize'>[-]</li>
+					<li class='save'>save?</li>
+					<li class='content'>art</li>
+					<li class='edit'>edit</li>
+					<li class='delete'>delete?</li>
+					<ul class='idea'>
+						<li class='minimize'>[-]</li>
+						<li class='save'>save?</li>
+						<li class='content'>slimeball tactics</li>
+						<li class='edit'>edit</li>
+						<li class='delete'>delete?</li>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+					</ul>
+				</ul>
+			</ul>
+			<ul class='top'>
+				<li class='minimize'>[-]</li>
+				<li class='save'>save?</li>
+				<li class='content'>miscellaneous</li>
+				<ul class='category'>
+					<li class='minimize'>[-]</li>
+					<li class='save'>save?</li>
+					<li class='content'>videogames</li>
+					<li class='edit'>edit</li>
+					<li class='delete'>delete?</li>
+					<ul class='idea'>
+						<li class='minimize'>[-]</li>
+						<li class='save'>save?</li>
+						<li class='content'>slimeball tactics</li>
+						<li class='edit'>edit</li>
+						<li class='delete'>delete?</li>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+					</ul>
+				</ul>
+				<ul class='category'>
+					<li class='minimize'>[-]</li>
+					<li class='save'>save?</li>
+					<li class='content'>movies</li>
+					<li class='edit'>edit</li>
+					<li class='delete'>delete?</li>
+					<ul class='idea'>
+						<li class='minimize'>[-]</li>
+						<li class='save'>save?</li>
+						<li class='content'>slimeball tactics</li>
+						<li class='edit'>edit</li>
+						<li class='delete'>delete?</li>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+					</ul>
+				</ul>
+				<ul class='category'>
+					<li class='minimize'>[-]</li>
+					<li class='save'>save?</li>
+					<li class='content'>tvshows</li>
+					<li class='edit'>edit</li>
+					<li class='delete'>delete?</li>
+					<ul class='idea'>
+						<li class='minimize'>[-]</li>
+						<li class='save'>save?</li>
+						<li class='content'>slimeball tactics</li>
+						<li class='edit'>edit</li>
+						<li class='delete'>delete?</li>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+						</ul>
+					</ul>
+				</ul>
+				<ul class='category'>
+					<li class='minimize'>[-]</li>
+					<li class='save'>save?</li>
+					<li class='content'>music</li>
+					<li class='edit'>edit</li>
+					<li class='delete'>delete?</li>
+					<ul class='idea'>
+						<li class='minimize'>[-]</li>
+						<li class='save'>save?</li>
+						<li class='content'>slimeball tactics</li>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+						</ul>
+					</ul>
+				</ul>
+				<ul class='category'>
+					<li class='minimize'>[-]</li>
+					<li class='save'>save?</li>
+					<li class='content'>writing</li>
+					<li class='edit'>edit</li>
+					<li class='delete'>delete?</li>
+					<ul class='idea'>
+						<li class='minimize'>[-]</li>
+						<li class='save'>save?</li>
+						<li class='content'>slimeball tactics</li>
+						<li class='edit'>edit</li>
+						<li class='delete'>delete?</li>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+					</ul>
+				</ul>
+				<ul class='category'>
+					<li class='minimize'>[-]</li>
+					<li class='save'>save?</li>
+					<li class='content'>art</li>
+					<ul class='idea'>
+						<li class='minimize'>[-]</li>
+						<li class='save'>save?</li>
+						<li class='content'>slimeball tactics</li>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+							<li class='edit'>edit</li>
+							<li class='delete'>delete?</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+						</ul>
+						<ul class='idea'>
+							<li class='minimize'>[-]</li>
+							<li class='save'>save?</li>
+							<li class='content'>slimeball tactics</li>
+						</ul>
+					</ul>
+				</ul>
+			</ul>
+		</ul>
+		</div>
+		<nav>
+		  <ul>
+			<li>GENERATE NAV HERE</li>
+			<li>hide/save/edit in dot menu?</li>
+			<li>ability to save ideas?</li>
+		  </ul>
+		</nav>
+	</div>
+	<footer>
+    <div class='content'>
+      <ul class='left'>
+        <li>a spentronics&#0153; digital creation<li>
+      </ul>
+      <ul class='right'>
+        <li><a>some link</a></li>
+        <li><a>etc</a></li>
+        <li><a>idk</a></li>
+        <li><a>to what</a></li>
+      </ul>
+    </div>
+	</footer>
+  </body>
+</html>
