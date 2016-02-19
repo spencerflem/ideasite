@@ -3,18 +3,21 @@
   <head>
     <link rel="stylesheet" media="all" href="html5reset.css"/>
     <link rel="stylesheet" media="all" href="testcss.css"/>
-    <link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Permanent+Marker" />
+    <link href='https://fonts.googleapis.com/css?family=EB+Garamond|Permanent+Marker' rel='stylesheet' type='text/css'>
     <script src="testjs.js"></script>
+    <script src="stickyfill.js"></script>
     <title>ideasite</title>
   </head>
   <body>
 	<header>
-	  <div class='logo'><a href="http://localhost:3000/">ideasite</a></div>
-	  <ul>
-		<li><a href="about.html.haml">about</a></li>
-		<li><a href="http://localhost:3000/">faq</a></li>
-		<li><a href="/users/sign_in">sign in</a></li>
-		<li><a href="/users/sign_up">sign up</a></li>
+	  <ul class='left'>
+      <li><a href="http://localhost:3000/">ideasite</a></li>
+    </ul>
+	  <ul class ='right'>
+  		<li><a href="about.html.haml">about</a></li>
+  		<li><a href="http://localhost:3000/">faq</a></li>
+  		<li><a href="/users/sign_in">sign in</a></li>
+  		<li><a href="/users/sign_up">sign up</a></li>
 	  </ul>
 	</header>
 	<div id='main'>
@@ -45,6 +48,10 @@
 							<li class='edit'>edit</li>
 							<li class='delete'>delete?</li>
 						</ul>
+            <ul class='new'>
+              <li class='maximize'>[+]</li>
+              <li class='betweenline'>new comment</li>
+            </ul>
 						<ul class='idea'>
 							<li class='minimize'>[-]</li>
 							<li class='save'>save?</li>
@@ -52,6 +59,9 @@
 							<li class='edit'>edit</li>
 							<li class='delete'>delete?</li>
 						</ul>
+            <ul class='hidden'>
+              <li>[+] hidden comment</li>
+            </ul>
 						<ul class='idea'>
 							<li class='minimize'>[-]</li>
 							<li class='save'>save?</li>
@@ -237,7 +247,7 @@
 					</ul>
 				</ul>
 			</ul>
-			
+
 			<ul class='top'>
 				<li class='minimize'>[-]</li>
 				<li class='save'>save?</li>
@@ -878,7 +888,17 @@
 		</nav>
 	</div>
 	<footer>
-	  
+    <div class='content'>
+      <ul class='left'>
+        <li>a spentronics&#0153; digital creation<li>
+      </ul>
+      <ul class='right'>
+        <li><a>some link</a></li>
+        <li><a>etc</a></li>
+        <li><a>idk</a></li>
+        <li><a>to what</a></li>
+      </ul>
+    </div>
 	</footer>
   </body>
 </html>

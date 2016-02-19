@@ -1,5 +1,6 @@
 body {
 	background-color: #F7F7F7;
+	font-family: 'EB Garamond', serif;
 }
 
 header {
@@ -7,32 +8,53 @@ header {
 	font-size: 1.3em;
 	padding: 0.3em 0;
 	border-bottom: 0.3rem solid black;
+	overflow: hidden;
 }
 
-header .logo {
+footer {
+	clear: both;
+	padding-top: 1.2rem;
+}
+
+footer .content {
+	color: gray;
+	padding: 0.4rem 0;
+	border-top: 0.1rem solid gray;
+}
+
+footer ul {
+	padding-bottom: 0.5rem;
+}
+
+header .left, footer .left {
+	float: left;
 	margin-left: 2em;
 }
 
-header a {
+header .right, footer .right {
+	float: right;
+	margin-right: 2em;
+}
+
+header li, footer li {
+	display: inline;
+	margin: 0 0.5em;
+}
+
+header a, footer a {
 	text-decoration: none;
+}
+
+header a {
 	color: black;
 }
 
-header .logo, header ul, header li {
-	display: inline;
+footer a {
+	color: gray;
 }
-
-header ul {
-	float: right;
-}
-
-header li {
-	margin-right: 1em;
-}
-
 
 #main {
-	width: 85%;
+	width: 88%;
 	margin: 0 auto;
 }
 
@@ -41,13 +63,8 @@ header li {
 	float: left;
 }
 
-nav {
-	width: 20%;
-	float: right;
-}
-
-footer {
-	clear: both;
+#main {
+	margin-bottom: 2em;
 }
 
 #main ul {
@@ -55,8 +72,7 @@ footer {
 	margin-top:0.7em;
 }
 
-#list {
-	font-family: 'Garamond', cursive;
+#list .minimize, #list .save, #list .edit, #list .delete {
 }
 
 #list .content {
@@ -65,18 +81,53 @@ footer {
 }
 
 #list .minimize {
+	font-family: monospace;
 	position: absolute;
 	margin-left: -1rem;
 	margin-top: 0.18rem;
-	font-size: 0.6em;
+	font-size: 0.7em;
 }
 
 #list .save {
 	display: none;
 }
 
-#list .edit, #list .delete{
+#list .edit, #list .delete {
 	display: inline;
 	font-size: 0.8em;
 	color: gray;
+}
+
+#list .maximize {
+	font-family: monospace;
+	font-size: 0.7em;
+	display: inline;
+	float: left;
+}
+
+#list .betweenline {
+	font-size: 0.8em;
+	display: inline;
+	float: left;
+	margin-left: 0.5em;
+}
+
+#list .new, #list .hidden {
+	position: absolute;
+	margin-top: -0.3rem;
+	margin-left: 0;
+}
+
+#list .hidden {
+	color: gray;
+}
+
+#list .new {
+	color: red;
+}
+
+nav {
+	width: 20%;
+	float: right;
+	background-color: gray;
 }
