@@ -11,7 +11,7 @@
   <body>
 	<header>
 	  <ul class='left'>
-      <li><a href="http://localhost:3000/">ideasite</a></li>
+      <li id='logo'><a href="http://localhost:3000/">ideasite</a></li>
     </ul>
 	  <ul class ='right'>
   		<li><a href="about.html.haml">about</a></li>
@@ -30,6 +30,7 @@
 				<li class='save'>save?</li>
 				<li class='content'>entertainment</li>
 				<ul class='category'>
+					<li class='insert'>new idea &#8594;</li>
 					<li class='minimize'>[-]</li>
 					<li class='save'>save?</li>
 					<li class='content'>videogames</li>
@@ -60,7 +61,8 @@
 							<li class='delete'>delete?</li>
 						</ul>
             <ul class='hidden'>
-              <li>[+] hidden comment</li>
+              <li class='maximize'>[+]</li>
+              <li class='betweenline'>hidden comment</li>
             </ul>
 						<ul class='idea'>
 							<li class='minimize'>[-]</li>
