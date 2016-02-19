@@ -1,0 +1,82 @@
+body {
+	background-color: #F7F7F7;
+}
+
+header {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 1.3em;
+	padding: 0.3em 0;
+	border-bottom: 0.3rem solid black;
+}
+
+header .logo {
+	margin-left: 2em;
+}
+
+header a {
+	text-decoration: none;
+	color: black;
+}
+
+header .logo, header ul, header li {
+	display: inline;
+}
+
+header ul {
+	float: right;
+}
+
+header li {
+	margin-right: 1em;
+}
+
+
+#main {
+	width: 85%;
+	margin: 0 auto;
+}
+
+#content {
+	width: 80%;
+	float: left;
+}
+
+nav {
+	width: 20%;
+	float: right;
+}
+
+footer {
+	clear: both;
+}
+
+#main ul {
+	padding-left:2em;
+	margin-top:0.7em;
+}
+
+#list {
+	font-family: 'Garamond', cursive;
+}
+
+#list .content {
+	//font-family: 'Permanent Marker', cursive;
+	display: inline;
+}
+
+#list .minimize {
+	position: absolute;
+	margin-left: -1rem;
+	margin-top: 0.18rem;
+	font-size: 0.6em;
+}
+
+#list .save {
+	display: none;
+}
+
+#list .edit, #list .delete{
+	display: inline;
+	font-size: 0.8em;
+	color: gray;
+}
