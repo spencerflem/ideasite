@@ -26,7 +26,7 @@ footer ul {
 	padding-bottom: 0.5rem;
 }
 
-header #logo, #list .top .content, header .right li :hover, footer .right li :hover{
+header #logo, .top .content , header .right li :hover, footer .right li :hover{
 	text-shadow: 0.07em 0.07em orange;
 }
 
@@ -75,77 +75,66 @@ footer a {
 	margin-top:0.7em;
 }
 
-#list .minimize, #list .save, #list .edit, #list .delete {
-}
-
-#list .content {
+#content li {
 	display: inline;
 }
 
-#list .category .content, #list .top .content {
+.category .content, .top .content {
 	font-family: 'Permanent Marker', cursive;
 }
 
-#list .category .content, #list .idea .content {
+.category .content {
 	text-shadow: none;
 }
 
-#list .idea  .content{
+.idea .content, .comment .content, .items{
 	font-family: 'EB Garamond', serif;
 }
 
-#list .insert {
+.insert {
 	position: absolute;
+}
+
+.insert {
 	color: orange;
 	margin-top: -0.5rem;
 	font-size: 0.8em;
 }
 
-#list .minimize {
+.minimize {
 	font-family: monospace;
 	margin-left: -1rem;
 	margin-top: 0.18rem;
 	font-size: 0.7em;
-	display: inline;
-	vertical-align: middle;
 }
 
-#list .save {
-	display: none;
-}
-
-#list .edit, #list .delete {
-	display: inline;
+.edit, .delete {
 	font-size: 0.8em;
 	color: gray;
 }
 
-#list .maximize {
+.maximize {
 	font-family: monospace;
 	font-size: 0.7em;
 	display: inline;
 	float: left;
 }
 
-#list .betweenline {
+.betweenline {
 	font-size: 0.8em;
 	display: inline;
 	float: left;
 	margin-left: 0.5em;
 }
 
-#list .new, #list .hidden {
+.hidden {
 	position: absolute;
 	margin-top: -0.3rem;
 	padding-left: 0;
 }
 
-#list .hidden {
+.hidden {
 	color: gray;
-}
-
-#list .new {
-	color: orange;
 }
 
 nav {

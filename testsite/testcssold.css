@@ -94,11 +94,8 @@ footer a {
 	font-family: 'EB Garamond', serif;
 }
 
-#list .minimize, #list .insert {
-	position: absolute;
-}
-
 #list .insert {
+	position: absolute;
 	color: orange;
 	margin-top: -0.5rem;
 	font-size: 0.8em;
@@ -109,6 +106,8 @@ footer a {
 	margin-left: -1rem;
 	margin-top: 0.18rem;
 	font-size: 0.7em;
+	display: inline;
+	vertical-align: middle;
 }
 
 #list .save {
