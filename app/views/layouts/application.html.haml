@@ -1,15 +1,16 @@
-!!!!
+!!!
 %html
   %head
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
-    = stylesheet_link_tag    'https://fonts.googleapis.com/css?family=Permanent+Marker'
+    = stylesheet_link_tag    'https://fonts.googleapis.com/css?family=EB+Garamond|Permanent+Marker'
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
     %title Nested
   %body
     %header
-      .logo= link_to "ideasite", root_url
-      %ul
+      %ul.left
+        %li#logo= link_to root_url
+      %ul.right
         %li= link_to "about", 'about.html.haml' #SHOULDNT BE THERE?
         %li= link_to "faq", root_url
         %li= link_to "sign in", new_user_session_path
@@ -18,64 +19,17 @@
       %p.notice= notice
       %p.alert= alert
       = yield
-      Lorem ipsum dolor sit amet, nonumes repudiandae suscipiantur ne pro. Usu voluptaria honestatis ad. Sit an dicta primis consetetur, no mea detracto salutandi, in wisi tota suavitate qui. No nec integre deseruisse. Has alii iusto eu, eam ut putent iisque appareat, quis blandit per in. Cu essent bonorum vel, justo verterem in cum. Vel cu rebum constituto philosophia, in viris nobis putent eos.
-
-      Sit homero tritani voluptatum te, vis velit saepe nemore ea. Illud reque graeco mea ea, ad nec alterum intellegat liberavisse. Cum percipit urbanitas no, pro quis option aliquip ei. An rebum cetero appareat usu.
-
-      Quo veritus erroribus mnesarchum ei, pri in impedit inimicus ocurreret, viderer deserunt interpretaris et vel. Illum indoctum mel eu. Ad choro noluisse mediocrem nam, pro ad tacimates voluptatum. Qui an duis tantas everti, est eu audire complectitur. No idque laoreet accumsan ius.
-
-      Eam saperet ornatus ei, postulant dissentiet eos an. Nec impetus saperet graecis eu, ei iriure delectus maiestatis eos. Iriure nusquam mnesarchum mei et, mollis oblique oporteat ea mei, cu pri aliquam luptatum ullamcorper. Ea per cibo molestiae, no sit mazim sententiae, pri id dicit delectus iracundia. Qui eu discere urbanitas, in per autem alterum.
-
-      Probo saperet mea ea. Et cum propriae deseruisse, an qui dolor eligendi. Minim veniam noster et usu, quo augue maluisset eu. Sit et nusquam qualisque, ei mazim causae pro. An vim nobis bonorum accusamus, vel nonumy dissentiunt id.
-      Lorem ipsum dolor sit amet, nonumes repudiandae suscipiantur ne pro. Usu voluptaria honestatis ad. Sit an dicta primis consetetur, no mea detracto salutandi, in wisi tota suavitate qui. No nec integre deseruisse. Has alii iusto eu, eam ut putent iisque appareat, quis blandit per in. Cu essent bonorum vel, justo verterem in cum. Vel cu rebum constituto philosophia, in viris nobis putent eos.
-
-      Sit homero tritani voluptatum te, vis velit saepe nemore ea. Illud reque graeco mea ea, ad nec alterum intellegat liberavisse. Cum percipit urbanitas no, pro quis option aliquip ei. An rebum cetero appareat usu.
-
-      Quo veritus erroribus mnesarchum ei, pri in impedit inimicus ocurreret, viderer deserunt interpretaris et vel. Illum indoctum mel eu. Ad choro noluisse mediocrem nam, pro ad tacimates voluptatum. Qui an duis tantas everti, est eu audire complectitur. No idque laoreet accumsan ius.
-
-      Eam saperet ornatus ei, postulant dissentiet eos an. Nec impetus saperet graecis eu, ei iriure delectus maiestatis eos. Iriure nusquam mnesarchum mei et, mollis oblique oporteat ea mei, cu pri aliquam luptatum ullamcorper. Ea per cibo molestiae, no sit mazim sententiae, pri id dicit delectus iracundia. Qui eu discere urbanitas, in per autem alterum.
-
-      Probo saperet mea ea. Et cum propriae deseruisse, an qui dolor eligendi. Minim veniam noster et usu, quo augue maluisset eu. Sit et nusquam qualisque, ei mazim causae pro. An vim nobis bonorum accusamus, vel nonumy dissentiunt id.
-      Lorem ipsum dolor sit amet, nonumes repudiandae suscipiantur ne pro. Usu voluptaria honestatis ad. Sit an dicta primis consetetur, no mea detracto salutandi, in wisi tota suavitate qui. No nec integre deseruisse. Has alii iusto eu, eam ut putent iisque appareat, quis blandit per in. Cu essent bonorum vel, justo verterem in cum. Vel cu rebum constituto philosophia, in viris nobis putent eos.
-
-      Sit homero tritani voluptatum te, vis velit saepe nemore ea. Illud reque graeco mea ea, ad nec alterum intellegat liberavisse. Cum percipit urbanitas no, pro quis option aliquip ei. An rebum cetero appareat usu.
-
-      Quo veritus erroribus mnesarchum ei, pri in impedit inimicus ocurreret, viderer deserunt interpretaris et vel. Illum indoctum mel eu. Ad choro noluisse mediocrem nam, pro ad tacimates voluptatum. Qui an duis tantas everti, est eu audire complectitur. No idque laoreet accumsan ius.
-
-      Eam saperet ornatus ei, postulant dissentiet eos an. Nec impetus saperet graecis eu, ei iriure delectus maiestatis eos. Iriure nusquam mnesarchum mei et, mollis oblique oporteat ea mei, cu pri aliquam luptatum ullamcorper. Ea per cibo molestiae, no sit mazim sententiae, pri id dicit delectus iracundia. Qui eu discere urbanitas, in per autem alterum.
-
-      Probo saperet mea ea. Et cum propriae deseruisse, an qui dolor eligendi. Minim veniam noster et usu, quo augue maluisset eu. Sit et nusquam qualisque, ei mazim causae pro. An vim nobis bonorum accusamus, vel nonumy dissentiunt id.
-      Lorem ipsum dolor sit amet, nonumes repudiandae suscipiantur ne pro. Usu voluptaria honestatis ad. Sit an dicta primis consetetur, no mea detracto salutandi, in wisi tota suavitate qui. No nec integre deseruisse. Has alii iusto eu, eam ut putent iisque appareat, quis blandit per in. Cu essent bonorum vel, justo verterem in cum. Vel cu rebum constituto philosophia, in viris nobis putent eos.
-
-      Sit homero tritani voluptatum te, vis velit saepe nemore ea. Illud reque graeco mea ea, ad nec alterum intellegat liberavisse. Cum percipit urbanitas no, pro quis option aliquip ei. An rebum cetero appareat usu.
-
-      Quo veritus erroribus mnesarchum ei, pri in impedit inimicus ocurreret, viderer deserunt interpretaris et vel. Illum indoctum mel eu. Ad choro noluisse mediocrem nam, pro ad tacimates voluptatum. Qui an duis tantas everti, est eu audire complectitur. No idque laoreet accumsan ius.
-
-      Eam saperet ornatus ei, postulant dissentiet eos an. Nec impetus saperet graecis eu, ei iriure delectus maiestatis eos. Iriure nusquam mnesarchum mei et, mollis oblique oporteat ea mei, cu pri aliquam luptatum ullamcorper. Ea per cibo molestiae, no sit mazim sententiae, pri id dicit delectus iracundia. Qui eu discere urbanitas, in per autem alterum.
-
-      Probo saperet mea ea. Et cum propriae deseruisse, an qui dolor eligendi. Minim veniam noster et usu, quo augue maluisset eu. Sit et nusquam qualisque, ei mazim causae pro. An vim nobis bonorum accusamus, vel nonumy dissentiunt id.
-      Lorem ipsum dolor sit amet, nonumes repudiandae suscipiantur ne pro. Usu voluptaria honestatis ad. Sit an dicta primis consetetur, no mea detracto salutandi, in wisi tota suavitate qui. No nec integre deseruisse. Has alii iusto eu, eam ut putent iisque appareat, quis blandit per in. Cu essent bonorum vel, justo verterem in cum. Vel cu rebum constituto philosophia, in viris nobis putent eos.
-
-      Sit homero tritani voluptatum te, vis velit saepe nemore ea. Illud reque graeco mea ea, ad nec alterum intellegat liberavisse. Cum percipit urbanitas no, pro quis option aliquip ei. An rebum cetero appareat usu.
-
-      Quo veritus erroribus mnesarchum ei, pri in impedit inimicus ocurreret, viderer deserunt interpretaris et vel. Illum indoctum mel eu. Ad choro noluisse mediocrem nam, pro ad tacimates voluptatum. Qui an duis tantas everti, est eu audire complectitur. No idque laoreet accumsan ius.
-
-      Eam saperet ornatus ei, postulant dissentiet eos an. Nec impetus saperet graecis eu, ei iriure delectus maiestatis eos. Iriure nusquam mnesarchum mei et, mollis oblique oporteat ea mei, cu pri aliquam luptatum ullamcorper. Ea per cibo molestiae, no sit mazim sententiae, pri id dicit delectus iracundia. Qui eu discere urbanitas, in per autem alterum.
-
-      Probo saperet mea ea. Et cum propriae deseruisse, an qui dolor eligendi. Minim veniam noster et usu, quo augue maluisset eu. Sit et nusquam qualisque, ei mazim causae pro. An vim nobis bonorum accusamus, vel nonumy dissentiunt id.
-      Lorem ipsum dolor sit amet, nonumes repudiandae suscipiantur ne pro. Usu voluptaria honestatis ad. Sit an dicta primis consetetur, no mea detracto salutandi, in wisi tota suavitate qui. No nec integre deseruisse. Has alii iusto eu, eam ut putent iisque appareat, quis blandit per in. Cu essent bonorum vel, justo verterem in cum. Vel cu rebum constituto philosophia, in viris nobis putent eos.
-
-      Sit homero tritani voluptatum te, vis velit saepe nemore ea. Illud reque graeco mea ea, ad nec alterum intellegat liberavisse. Cum percipit urbanitas no, pro quis option aliquip ei. An rebum cetero appareat usu.
-
-      Quo veritus erroribus mnesarchum ei, pri in impedit inimicus ocurreret, viderer deserunt interpretaris et vel. Illum indoctum mel eu. Ad choro noluisse mediocrem nam, pro ad tacimates voluptatum. Qui an duis tantas everti, est eu audire complectitur. No idque laoreet accumsan ius.
-
-      Eam saperet ornatus ei, postulant dissentiet eos an. Nec impetus saperet graecis eu, ei iriure delectus maiestatis eos. Iriure nusquam mnesarchum mei et, mollis oblique oporteat ea mei, cu pri aliquam luptatum ullamcorper. Ea per cibo molestiae, no sit mazim sententiae, pri id dicit delectus iracundia. Qui eu discere urbanitas, in per autem alterum.
-
-      Probo saperet mea ea. Et cum propriae deseruisse, an qui dolor eligendi. Minim veniam noster et usu, quo augue maluisset eu. Sit et nusquam qualisque, ei mazim causae pro. An vim nobis bonorum accusamus, vel nonumy dissentiunt id.
     %nav
       %ul
         %li GENERATE NAV HERE
         %li nave items -todo
         %li useful Nav Items
     %footer
-      a spentronics site
+      %div.content
+        %ul.left
+          %li a spentronics&#0153; digital creation
+        %ul.right
+          %li some link
+          %li etc
+          %li idk
+          %li to what

@@ -1,15 +1,14 @@
 module CommentsHelper
   def comments_tree_for(comments)
-      comments.map do |comment, nested_comments|
-        content_tag :li, (render(comment) + (nested_comments.size > 0 ? (content_tag :ul, comments_tree_for(nested_comments)) :nil))
-      end.join.html_safe
-  end
-
-  # output is badly formatted - clean up!
-
-  def scomments_tree_for(comments)
-      comments.map do |comment, nested_comments|
-        content_tag :li, (render(comment) + (nested_comments.size > 0 ? (content_tag :ul, comments_tree_for(nested_comments)) :nil))
-      end.join.html_safe
+    comments.map do |comment, nested_comments|
+      haml_tag :li, :class => comment.type do
+        haml_concat render(comment)
+        if nested_comments.size > 0
+          haml_tag :ul do
+            comments_tree_for(nested_comments)
+          end
+        end
+      end
+    end
   end
 end

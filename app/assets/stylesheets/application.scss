@@ -1,54 +1,287 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+	HTML5 Reset :: style.css
+	----------------------------------------------------------
+	We have learned much from/been inspired by/taken code where offered from:
+
+	Eric Meyer					:: http://meyerweb.com
+	HTML5 Doctor				:: http://html5doctor.com
+	and the HTML5 Boilerplate	:: http://html5boilerplate.com
+
+-------------------------------------------------------------------------------*/
+
+/* Let's default this puppy out
+-------------------------------------------------------------------------------*/
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-weight: normal;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+article, aside, figure, footer, header, nav, section, details, summary {display: block;}
+
+/* Handle box-sizing while better addressing child elements:
+   http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+/* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
+
+/* Responsive images and other embedded objects */
+/* if you don't have full control over `img` tags (if you have to overcome attributes), consider adding height: auto */
+img,
+object,
+embed {max-width: 100%;}
+
+/*
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+	In fact, it *will* cause problems with Google Maps' controls at small size.
+	If this is the case for you, try uncommenting the following:
+
+#map img {
+		max-width: none;
+}
+*/
+
+/* force a vertical scrollbar to prevent a jumpy page */
+html {overflow-y: scroll;}
+
+/* we use a lot of ULs that aren't bulleted.
+	you'll have to restore the bullets within content,
+	which is fine because they're probably customized anyway */
+ul {list-style: none;}
+
+blockquote, q {quotes: none;}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {content: ''; content: none;}
+
+a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+
+del {text-decoration: line-through;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+
+/* tables still need cellspacing="0" in the markup */
+table {border-collapse: separate; border-spacing: 0;}
+th {font-weight: bold; vertical-align: bottom;}
+td {font-weight: normal; vertical-align: top;}
+
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+
+input, select {vertical-align: middle;}
+
+pre {
+    white-space: pre; /* CSS2 */
+    white-space: pre-wrap; /* CSS 2.1 */
+    white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+    word-wrap: break-word; /* IE */
+}
+
+input[type="radio"] {vertical-align: text-bottom;}
+input[type="checkbox"] {vertical-align: bottom;}
+.ie7 input[type="checkbox"] {vertical-align: baseline;}
+.ie6 input {vertical-align: text-bottom;}
+
+select, input, textarea {font: 99% sans-serif;}
+
+table {font-size: inherit; font: 100%;}
+
+small {font-size: 85%;}
+
+strong {font-weight: bold;}
+
+td, td img {vertical-align: top;}
+
+/* Make sure sup and sub don't mess with your line-heights http://gist.github.com/413930 */
+sub, sup {font-size: 75%; line-height: 0; position: relative;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+/* standardize any monospaced elements */
+pre, code, kbd, samp {font-family: monospace, sans-serif;}
+
+/* hand cursor on clickable elements */
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+input[type=file],
+button {cursor: pointer;}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {margin: 0;}
+
+/* make buttons play nice in IE */
+button,
+input[type=button] {width: auto; overflow: visible;}
+
+/* scale images in IE7 more attractively */
+.ie7 img {-ms-interpolation-mode: bicubic;}
+
+/* prevent BG image flicker upon hover
+   (commented out as usage is rare, and the filter syntax messes with some pre-processors)
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+*/
+
+/* let's clear some floats */
+.clearfix:after { content: " "; display: block; clear: both; }
+
+
 body {
-  background-color: #F7F7F7;
+	background-color: #F7F7F7;
+	font-family: 'EB Garamond', serif;
 }
 
 header {
-  font-family: 'Permanent Marker', cursive;
-  font-size: 1.3em;
-  padding: 0.3em 0;
-  border-bottom: 0.3rem solid black;
-}
-
-header .logo {
-  margin-left: 2em;
-}
-
-header a {
-  text-decoration: none;
-  color: black;
-}
-
-header .logo, header ul, header li {
-  display: inline;
-}
-
-header ul {
-  float: right;
-}
-
-header li {
-  margin-right: 1em;
-}
-
-nav {
-    //float: right;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 1.3em;
+	padding: 0.3em 0;
+	border-bottom: 0.3rem solid black;
+	overflow: hidden;
 }
 
 footer {
-  background-color: gray;
+	clear: both;
+	padding-top: 1.2rem;
+}
+
+footer .content {
+	color: gray;
+	padding: 0.4rem 0;
+	border-top: 0.1rem solid gray;
+}
+
+footer ul {
+	padding-bottom: 0.5rem;
+}
+
+header #logo, .top .content , header .right li :hover, footer .right li :hover{
+	text-shadow: 0.07em 0.07em orange;
+}
+
+header .left, footer .left {
+	float: left;
+	margin-left: 2em;
+}
+header .right, footer .right {
+	float: right;
+	margin-right: 2em;
+}
+
+header li, footer li {
+	display: inline;
+	margin: 0 0.5em;
+}
+
+header a, footer a {
+	text-decoration: none;
+}
+
+header a {
+	color: black;
+}
+
+footer a {
+	color: gray;
+}
+
+#main {
+	width: 88%;
+	margin: 0 auto;
+}
+
+#content {
+	width: 80%;
+	float: left;
+}
+
+#main {
+	margin-bottom: 2em;
+}
+
+#main ul {
+	padding-left:2em;
+	margin-top:0.7em;
+}
+
+#content li {
+	display: inline;
+}
+
+.category .content, .top .content {
+	font-family: 'Permanent Marker', cursive;
+}
+
+.category .content {
+	text-shadow: none;
+}
+
+.idea .content, .comment .content, .items{
+	font-family: 'EB Garamond', serif;
+}
+
+.insert {
+	position: absolute;
+}
+
+.insert {
+	color: orange;
+	margin-top: -0.5rem;
+	font-size: 0.8em;
+}
+
+.minimize {
+	font-family: monospace;
+	margin-left: -1rem;
+	margin-top: 0.18rem;
+	font-size: 0.7em;
+}
+
+.edit, .delete {
+	font-size: 0.8em;
+	color: gray;
+}
+
+.maximize {
+	font-family: monospace;
+	font-size: 0.7em;
+	display: inline;
+	float: left;
+}
+
+.betweenline {
+	font-size: 0.8em;
+	display: inline;
+	float: left;
+	margin-left: 0.5em;
+}
+
+.hidden {
+	position: absolute;
+	margin-top: -0.3rem;
+	padding-left: 0;
+}
+
+.hidden {
+	color: gray;
+}
+
+nav {
+	width: 20%;
+	float: right;
+	background-color: gray;
 }
