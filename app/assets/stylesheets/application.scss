@@ -244,6 +244,14 @@ footer a {
 	font-size: 0.8em;
 }
 
+.insert a {
+	visibility: hidden;
+}
+
+.insert:hover a {
+	visibility: visible;
+}
+
 .minimize {
 	font-family: monospace;
 	margin-left: -1rem;

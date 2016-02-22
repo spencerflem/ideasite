@@ -9,16 +9,17 @@
   %body
     %header
       %ul.left
-        %li#logo= link_to root_url
+        %li#logo= link_to "ideasite", root_url
       %ul.right
-        %li= link_to "about", 'about.html.haml' #SHOULDNT BE THERE?
+        %li= link_to "about", 'about_url'
         %li= link_to "faq", root_url
         %li= link_to "sign in", new_user_session_path
         %li= link_to "sign up", new_user_registration_path
-    %content
+    %div#content
       %p.notice= notice
       %p.alert= alert
-      = yield
+      %ul#main
+        = yield
     %nav
       %ul
         %li GENERATE NAV HERE
