@@ -1,15 +1,15 @@
-%ul.items
-  %li.insert
-    %a
-      new comment ->
-  %li.minimize
-    %a
+%div.item
+  %div.above
+    %input.insertabove{:type=>"text"}
+  %div.center
+    %a.minimize
       [-]
-  %li.content
-    = comment.content
-  %li.edit
-    %a
+    %span.content
+      = comment.content
+    %a.edit
       edit
-  %li.delete
-    %a
+    %a.delete
       delete
+  %div.below
+    %input.insertbelow{:type=>"text"}
+    %input.insertunder{:type=>"text"}

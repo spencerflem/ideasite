@@ -230,27 +230,33 @@ footer a {
 	text-shadow: none;
 }
 
-.idea .content, .comment .content, .items{
+.idea .content, .comment .content, .item{
 	font-family: 'EB Garamond', serif;
 }
 
-.insert {
-	position: absolute;
+.insertabove, .insertbelow, .insertunder {
+  border: 0;
+  background-color: red;
+  padding: 0;
+  position: absolute;
 }
 
-.insert {
-	color: orange;
-	margin-top: -0.5rem;
-	font-size: 0.8em;
+//make text style same as the appropro comment look
+
+.insertabove {
+  margin-top: -0.5rem;
 }
 
-.insert a {
-	visibility: hidden;
+.insertbelow {
 }
 
-.insert:hover a {
-	visibility: visible;
+.insertunder {
+  margin-left: 2em;
 }
+
+//only display ABOVE if necessary (ie: not the save level as comment above) - always display UNDER
+
+//submit button in html: js removes and makes ender submit
 
 .minimize {
 	font-family: monospace;
